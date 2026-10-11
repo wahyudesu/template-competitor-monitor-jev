@@ -12,7 +12,7 @@ A page edit doesn't always mean a competitor changed its pricing or product. Nav
 
 ## Prerequisites
 
-- **[OpenAI API key](https://platform.openai.com/api-keys)**: set `OPENAI_API_KEY` for the Studio chat. The chat uses `openai/gpt-6-luna` to understand requests and explain results. Your account needs access to this model.
+- **[OpenAI API key](https://platform.openai.com/api-keys)**: set `OPENAI_API_KEY` for the Studio chat. The chat uses `sumopod/glm-5.3-flash` through `https://ai.sumopod.com/v1` to understand requests and explain results.
 - **[TypeSafe AI API key](https://console.typesafe.ai)**: set `TYPESAFE_AI_API_KEY` to classify changes with Jev. Direct TypeSafe access is the default, using `jev-latest`.
 - **[Vercel AI Gateway key (alternative)](https://vercel.com/docs/ai-gateway/authentication-and-byok)**: instead of a TypeSafe key, set `JEV_ACCESS_MODE=vercel-gateway` and `AI_GATEWAY_API_KEY`. This route uses `typesafe-ai/jev`; your Gateway account needs access to it. OpenAI chat still uses `OPENAI_API_KEY` directly.
 - **[Google Chrome (optional)](https://www.google.com/chrome/)**: install Chrome for the local Stagehand fallback when a page needs browser rendering. Ordinary HTTP collection needs no browser account.

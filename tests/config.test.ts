@@ -14,7 +14,7 @@ describe('execution configuration', () => {
       sources: { maxSources: 3, concurrency: 3, candidatesPerSource: 20 },
       models: {
         jev: 'jev-latest',
-        summary: 'openai/gpt-6-luna',
+        summary: 'glm-5.3-flash',
         summaryReasoning: 'none',
         summaryMaxInputTokens: 8_000,
         summaryMaxOutputTokens: 800,

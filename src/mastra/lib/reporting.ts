@@ -88,7 +88,7 @@ export function createReportSummaryAgent(apiKey: string) {
     // The installed native model router invokes OpenAI's Responses API at this explicit base URL.
     model: {
       id: MODEL_DEFAULTS.summary,
-      url: 'https://api.openai.com/v1',
+      url: 'https://ai.sumopod.com/v1',
       api: 'responses',
       apiKey,
     },

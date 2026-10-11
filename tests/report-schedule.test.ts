@@ -372,9 +372,9 @@ describe('grounded reports and native schedules', () => {
     expect(renderedErrors).not.toContain('prompt-marker');
     expect(renderedErrors).not.toContain('provider-message-marker');
     expect(renderedErrors).not.toContain('credential-marker');
-    expect(request).toMatchObject({ url: 'https://api.openai.com/v1/responses' });
+    expect(request).toMatchObject({ url: 'https://ai.sumopod.com/v1/responses' });
     expect(request?.body).toMatchObject({
-      model: 'gpt-6-luna',
+      model: 'glm-5.3-flash',
       max_output_tokens: 800,
       reasoning: { effort: 'none' },
     });

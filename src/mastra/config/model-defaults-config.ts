@@ -4,7 +4,7 @@ export const MODEL_DEFAULTS = {
   // Alias, not a reproducible pin. JEV_MODEL may select a verified nonempty model ID.
   jev: 'jev-latest',
   // Model for short evidence summaries; no automatic substitution.
-  summary: 'openai/gpt-6-luna',
+  summary: 'glm-5.3-flash',
   // Approved reasoning setting for short structured summaries; no env override.
   summaryReasoning: 'none',
   // Tokens/request including prompt, evidence and schema; hard ceiling, no env override.
@@ -49,7 +49,8 @@ export const CHAT_DEFAULTS = {
   lastMessages: 20,
   // Provider retries per chat request; disabled to surface failures without automatic redispatch.
   maxRetries: 0,
-  model: MODEL_DEFAULTS.summary,
+  // Model for chat; must use provider/model format for Mastra model router.
+  model: 'openai/glm-5.3-flash',
   reasoning: MODEL_DEFAULTS.summaryReasoning,
   // Agent steps per message, including the workflow invocation and the reply.
   maxSteps: 5,

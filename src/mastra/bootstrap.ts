@@ -30,6 +30,7 @@ export function initializeRuntime(environment: Readonly<Record<string, string | 
   const monitorAgent = config.credentials.openaiApiKey
     ? createCompetitorMonitorAgent(workflow, {
         id: CHAT_DEFAULTS.model,
+        url: 'https://ai.sumopod.com/v1',
         apiKey: config.credentials.openaiApiKey,
       })
     : undefined;
